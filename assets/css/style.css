@@ -1,0 +1,56 @@
+/*
+#  Stylesheet foir mini-resume-project
+*/
+
+/* grab these from fonts.google.com  get the import statement for this definition
+       Add weigfhts as required.  In this case (100-700)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700&display=swap');
+
+/*  ---------------------------------------------------------   Colors  */
+.bg-color-name-title {
+    background-color: #676767;
+}
+
+/*  ---------------------------------------------------------   Heading  */
+header {
+    margin: 0;
+    /*  set all margins to 0 for now */
+}
+
+.heading {
+    margin-left: 50px;
+}
+
+.logo {
+    background: url("../images/rosie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*  cover entire container */
+    min-height: 360px;
+    /* apply a mild transition "in-out" (slow) and use various tool kit definitions */
+    transition: all   .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.name {
+    font-family: "Exo", sans-serif ;
+    font-weight: 100;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 28px;
+    margin-bottom: 90px;
+    color: #fff;
+}
+
+/*  ---------------------------------------------------------   ????  */
