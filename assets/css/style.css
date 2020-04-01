@@ -7,13 +7,27 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700&display=swap');
-
 /*  ---------------------------------------------------------   Colors  */
+
 .bg-color-name-title {
     background-color: #676767;
 }
 
+.ui-menu-color-home {
+    background-color: #e67e22;
+}
+.ui-menu-color-resume {
+    background-color: #9b59b6;
+}
+.ui-menu-color-contact {
+    background-color: #3498db;
+}
+.ui-menu-color-download {
+    background-color: #525252;
+}
+
 /*  ---------------------------------------------------------   Heading  */
+
 header {
     margin: 0;
     /*  set all margins to 0 for now */
@@ -31,13 +45,13 @@ header {
     /*  cover entire container */
     min-height: 360px;
     /* apply a mild transition "in-out" (slow) and use various tool kit definitions */
-    transition: all   .5s ease-in-out;
+    transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
-    font-family: "Exo", sans-serif ;
+    font-family: "Exo", sans-serif;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -53,4 +67,18 @@ header {
     color: #fff;
 }
 
-/*  ---------------------------------------------------------   ????  */
+/*  ---------------------------------------------------------   Over-rides  */
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+ /*  Hack to eliminate white and control space in disply  */ 
+.menucontainer {     
+    font-size: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
