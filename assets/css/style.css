@@ -43,6 +43,10 @@ h1, h2, h3, h4 {
     /*  Off white used throught  */
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -161,9 +165,63 @@ header {
 }
 
 /*  ---------------------------------------------------------   Footer   */
+
 footer {
-background-color: #525252;    /* Dark gray  */
-color: #fafafa;
-min-height: 120px;              /* default min height - same as header for symmetry  */
-margin: 0;                      /* 0 for full alignment  */ 
+    background-color: #525252;
+    /* Dark gray  */
+    color: #fafafa;
+    min-height: 120px;
+    /* default min height - same as header for symmetry  */
+    margin: 0;
+    /* 0 for full alignment  */
+}
+
+.cv-pdf i {
+    /* target i item within the cv-pdf class  */
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    /* add a little space left to text  */
+    transition: all 0.35s ease-in-out;
+    /* you always want to put the transitions in the parent element, rather than the hovered. */
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    /* probably not necessary, but good form  */
+    -moz-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #e84610;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    /* select FA Icons in the link!  */
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    /* 50% makes a circle ( icon set 32X32 - square */
+    font-size: 13px;
+    /* font-size, line height, colors as required */
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #8f8f8f;     /* Nice light gray  */
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+    padding: 20px;     /* single - top/botom/left/right  */ 
 }
