@@ -16,14 +16,35 @@
 .ui-menu-color-home {
     background-color: #e67e22;
 }
+
 .ui-menu-color-resume {
     background-color: #9b59b6;
 }
+
 .ui-menu-color-contact {
     background-color: #3498db;
 }
+
 .ui-menu-color-download {
     background-color: #525252;
+}
+
+/*  ---------------------------------------------------------   Special paddings/margins/text  */
+
+h1, h2, h3, h4 {
+    margin: 0;
+    /*  Set all margins to 0  */
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+    /*  Off white used throught  */
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 /*  ---------------------------------------------------------   Heading  */
@@ -67,18 +88,82 @@ header {
     color: #fff;
 }
 
-/*  ---------------------------------------------------------   Over-rides  */
+/*  ---------------------------------------------------------   menu items  */
 
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
 
- /*  Hack to eliminate white and control space in disply  */ 
-.menucontainer {     
+/*  Hack to eliminate white and control space in disply  */
+
+.menucontainer {
     font-size: 0;
+}
+
+#nav {
+    margin: 0;
+    /* remove margin from this row to make it aligh  */
 }
 
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    width: 100%;
+    /* MAKE THE ENTIRE AREA CLICKABLE */
+    text-decoration: none;
+    /* remove the underline from text  */
+    color: #fff;
+    height: 120px;
+    /* match the parent menuitem for size */
+}
+
+.menuitem a i {
+    /* Target the font of the icon (in the i tag)  */
+    padding-top: 27px;
+    /* bump down a bit from top  */
+    display: block;
+    /* make this have a line opf its own - start and end on a new line */
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    /* has full width of parent div  */
+    padding-top: 5px;
+    /* bump it down a bit */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* just a tiny bit bigger */
+    font-weight: 300;
+    /* slightly thinner but elegant  */
+    letter-spacing: 2px;
+    /* add some space in there between leters */
+}
+
+/*  ---------------------------------------------------------   hover.css   */
+
+.hvr-sweep-to-bottom::before {
+    /* targets developer class rendering to apply color before rendering */
+    background-color: rgba(0, 0, 0, .2);
+    height: 120px;
+}
+
+/*  ---------------------------------------------------------   Footer   */
+footer {
+background-color: #525252;    /* Dark gray  */
+color: #fafafa;
+min-height: 120px;              /* default min height - same as header for symmetry  */
+margin: 0;                      /* 0 for full alignment  */ 
 }
