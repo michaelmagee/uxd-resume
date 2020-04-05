@@ -51,26 +51,8 @@
 
     </header>
 
-    <!-- Takes full width of presentation space -->
-    <section class="container-fluid">
+    <section>
 
-        <!-- Inside row create a column (required- a column as a direct child of a row) of size 8, which is two-thirds the width of the screen.
-I don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width.
-class  section-column, which will specify that this column is a table cell.
-The row-table class specifies the use of a table whereas 
-section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height. -->
-
-        <div class="row row-table">
-            <!-- WHY table structure?  - columns will remain the same height, regardless of content.-->
-            <div class="col-md-8 bg-color-three-reasons section-column">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="section-heading uppercase">About Me</h3>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </section>
 
     <footer class="container-fluid">
@@ -97,7 +79,7 @@ section-column specifies the use of a table cell, which will give us evenly size
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Social</h5>
                 <ul class="list-inline social-links">
-                    <!-- list-inline-item REQUIRED for list-inline UL's -->
+                 <!-- list-inline-item REQUIRED for list-inline UL's -->
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
                             <i class="fab fa-facebook" aria-hidden="true"></i>

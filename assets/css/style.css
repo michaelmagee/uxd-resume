@@ -29,6 +29,10 @@
     background-color: #525252;
 }
 
+.bg-color-three-reasons {
+    background-color: #fff;
+}
+
 /*  ---------------------------------------------------------   Special paddings/margins/text  */
 
 h1, h2, h3, h4 {
@@ -49,6 +53,23 @@ h1, h2, h3, h4 {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /*  ---------------------------------------------------------   Heading  */
@@ -211,7 +232,8 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background-color: #8f8f8f;     /* Nice light gray  */
+    background-color: #8f8f8f;
+    /* Nice light gray  */
     transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
@@ -223,5 +245,6 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;     /* single - top/botom/left/right  */ 
+    padding: 20px;
+    /* single - top/botom/left/right  */
 }
