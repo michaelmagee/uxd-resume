@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="row no-gutters"><a href="index.html" class="col-md-4 logo"></a>
             <div class="col-md-8">
@@ -48,20 +47,67 @@
                 </div>
             </div>
         </div> <!-- row-->
-
     </header>
-
-    <!-- Takes full width of presentation space -->
     <section class="container-fluid">
-
-        <!-- Inside row create a column (required- a column as a direct child of a row) of size 8, which is two-thirds the width of the screen.
-I don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width.
-class  section-column, which will specify that this column is a table cell.
-The row-table class specifies the use of a table whereas 
-section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height. -->
-
-        <div class="row row-table">
-            <!-- WHY table structure?  - columns will remain the same height, regardless of content.-->
+        <div class="row">
+            <!-- row-table subsequently removed to fix positioning issues. -->
+            <div class="col-md-4 bg-color-personal section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Personal info
+                        </h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Name:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Rosie Odenkirk
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Address:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            17 Riverdale, Catskills NY, USA
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Phone:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            555.123.4567
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Email:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            rosie.odenkirk@hansaw.com
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-8 bg-color-three-reasons section-column">
                 <div class="row">
                     <div class="col">
@@ -187,5 +233,13 @@ section-column specifies the use of a table cell, which will give us evenly size
         </div>
     </footer>
 </body>
+
+
+<!-- Notes from Section. 
+Inside row create a column (required- a column as a direct child of a row) of size 8, which is two-thirds the width of the screen.
+I don't need to add any size classes for screen sizes smaller than medium because Bootstrap will automatically default to 12, our full width.
+class  section-column, which will specify that this column is a table cell.
+The row-table class specifies the use of a table whereas 
+section-column specifies the use of a table cell, which will give us evenly sized columns in terms of height. -->
 
 </html>
