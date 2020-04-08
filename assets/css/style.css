@@ -266,7 +266,7 @@ footer {
 /*  ---------------------------------------------------------   Personal Info  */
 .personal-info-item {
     margin-bottom: 20px;
-    display: block;   /* start end with newline and occupy all horix space  */ 
+    display: block;   /* start end with newline and occupy all horiz space  */ 
     clear: both;
 
 }
@@ -298,5 +298,26 @@ margin: 0;
 .personal-info-item .value {
     width: 60%;             /* This takes the remaining 60% of the space  */ 
     position: relative;     /* puts it next to predecessor  */ 
+}
 
+/*  ---------------------------------------------------------   Skills  */
+
+.progress {   /*  BS Wrapper class  */ 
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px; /* push bars down relative to each other  */ 
+}
+
+.progress-type {        /* label required left on top of bar  */ 
+    position: absolute;
+    left: 0px;          /* absolute child and will get max left position  */ 
+    font-weight: 400;
+    /* top-3px, right-30px, bottom-2px left-10px horizontal breathing space. */
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;  /* 40 top & botton, 20 left & right  */ 
 }
